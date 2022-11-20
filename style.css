@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+*{
+margin:0;
+padding:0 ;
+font-family: 'Poppins', sans-serif;
+box-sizing:border-box;
+}
+
+body{
+    background: #000000 ;
+
+    color: #fff;
+
+}
+
+#header{
+    width:100%;
+    height:100vh;
+    background-image: url(images/pexels-aleksandar-pasaric-1820770.jpg);
+    background-size: cover ;
+    background-position: center;
+
+
+}
+.container img{
+    height:100px;
+    width:170px;
+   
+}
+nav{
+    display:flex;
+    align-items: center;
+    /* margin-left: 832px; */
+    justify-content: space-between;
+    position: fixed;
+    background: #26021b87;
+    top: 0;
+    opacity: none;
+    /* flex-wrap: wrap; */
+   
+
+}
+nav ul{
+   margin-left: 700px;
+   position: relative;
+   right:150px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 40px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none ;
+    font-size: 18px;
+    position:relative;
+    
+}
+nav ul li a::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: #83132b;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.2s;
+}
+nav ul li a:hover::after{
+    width:50px;
+
+}
+.header-text{
+    margin-top: 220px;
+    font-size: 30px;
+    padding:20px
+}
+.header-text h1 span{
+    color: #f90844;
+}
+.header-text h4{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #ff004f; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ff004f; }
+  }
+.header-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.hire{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #d00c82;
+    color: rgb(19, 2, 12);
+    border: none;
+    outline: none;
+    box-shadow: 0 1em 3em -1.25em rgba(0,0,0,0.3);
+    padding: 1em 1.5em;
+    text-transform:capitalize;
+    border-radius: 200px;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+   margin-top: 20px;
+    overflow: hidden;
+    margin-left: 360px;
+ 
+}
+.hire:hover{
+    background-color: #fff;
+
+}
+
+.header-left img{
+    margin-top: 100px;
+    margin-left: 50px;
+    height:250px;
+    width:200px;
+    border-radius:10px;
+}
+.header-text h1{
+text-align: center;
+}
+
+nav h3{
+    font-family: 'Sacramento', cursive;
+    font-size: 50px;
+}
+#About{
+    margin-top: 70px;
+    display: flex;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#About img{ 
+margin-top: 150px;
+margin-left: 100px;
+height:450px;
+width:350px;
+border-radius: 100px;
+}
+.write{
+    margin-left: 150px;
+    font-size: 20px;
+    width: 800px;
+    line-height: 30px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.write h1{
+    font-family: 'Cedarville Cursive', cursive;
+
+}
+.write p{
+    font-family: 'Cedarville Cursive', cursive;
+    margin: 50px 25px;
+}
+.write h1{
+    margin-left: 25px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#projects{
+    padding: 40px;
+    margin-top: 80px;
+    text-transform: capitalize;
+}
+#projects h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:40px;
+}
+
+.projects-lists{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.projects-lists div{
+
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+    border-radius: 10px;
+}
+.projects-lists div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.projects-lists div a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+.projects-lists div:hover{
+    background: #cb0f38;
+    transform: translateY(-10px);
+}
+
+
+
+#contact h1{
+    margin-top: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size:40px;
+    margin-right: 100px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+    margin-left: 100px;
+   
+}
+.contact-right{
+    flex-basis: 60%;
+    margin-left: 100px;
+ 
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+  
+   margin-right: 15px;
+   font-size: 25px;
+
+}
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+       text-decoration: none;
+       font-size: 30px;
+       margin-right: 15px;
+       color: #ababab;
+       display: inline-block;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.contact-right form{
+    width: 100%;  
+  
+}
+.btn.btn2{
+    display: inline-block;
+    
+    background: #ff004f;
+    
+}
+form input,form textarea{
+    width: 50%;
+ 
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.btn.btn2{
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    
+}
+.btn.btn2:hover{
+    background: #ababab;
+}
+.copyright{
+    width: 100%;
+    text-align:center;
+    padding: 25px 0;
+    
+    font-weight: 300;
+    text-transform: capitalize;
+
+}
